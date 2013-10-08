@@ -8,7 +8,7 @@ This repo contains my personal dotfiles and are heavily based on [addy](https://
 * Dropbox via the command-line support `dropbox upload {localFile} {remoteFile}`, `dropbox download {remoteFile} {localFile}`, `dropbox list` etc.
 * Browser and npm aliases e.g `chrome`, `safari`, `opera`, `firefox`, `chromium` and others.
 * Launch all browsers with a specific URL `browsers "http://google.com"`
-* My Sublime Text build files (Grunt, Yeoman, r.js, SASS, Less and a few others included)
+* My Sublime Text build files (Jade, Stylus, coffee Script, SASS)
 * [@cowboy](http://github.com/cowboy)'s GitHub Pull Request Helper
 
 ## install the neccessary apps
@@ -107,7 +107,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/addyosmani/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/elwerik/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
