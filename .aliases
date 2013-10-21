@@ -27,8 +27,19 @@ alias gpr="~/code/gpr $1"
 
 # general shortcuts
 alias pro="cd ~/projects"
-alias gh="open -a google\ chrome 'http://github.com/addyosmani'"
+alias gh="open -a google\ chrome 'http://github.com/elwerik'"
 alias bl="open -a google\ chrome 'http://browserling.com'"
+
+#nginx
+alias nx="sudo nginx"
+alias nonx="sudo nginx -s stop"
+alias renx="sudo nginx -s stop; sudo nginx"
+alias confnx="sudo vim/usr/local/etc/nginx/nginx.conf"
+
+#apache
+alias apa="sudo apachectl start"
+alias noapa="sudo apachectl stop"
+alias reapa="sudo apachectl restart"
 
 # be nice
 alias please=sudo
