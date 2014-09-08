@@ -7,9 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # programs
-alias st='open -a "Sublime Text 2"'
-# also/or do this:
-# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+alias st='open -a "Sublime Text"'
 alias preview="open -a '$PREVIEW'"
 alias xcode="open -a '/Developer/Applications/Xcode.app'"
 alias filemerge="open -a '/Developer/Applications/Utilities/FileMerge.app'"
@@ -17,17 +15,16 @@ alias safari="open -a safari"
 alias firefox="open -a firefox"
 alias opera="open -a opera"
 alias chrome="open -a google\ chrome"
-alias chromium="open -a chromium"
-alias dashcode="open -a dashcode"
 alias f='open -a Finder'
 alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app'"
 alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
-alias gpr="~/code/gpr $1"
+alias skecth='open -a "Sketch"'
+alias tweetbot='open -a "Tweetbot"'
 
 
 # general shortcuts
 alias pro="cd ~/projects"
-alias gh="open -a google\ chrome 'http://github.com/elwerik'"
+alias gh="open -a google\ chrome 'http://github.com/erikfloresq'"
 alias bl="open -a google\ chrome 'http://browserling.com'"
 
 #nginx
@@ -46,7 +43,7 @@ alias please=sudo
 
 # handy things
 alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
+alias spotify="osascript ~/code/SpotifyControl.scpt"
 
 
 # Detect which `ls` flavor is in use
@@ -133,17 +130,18 @@ alias fs="stat -f \"%z bytes\""
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Empty the Trash on all mounted volumes and the main HDD
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
+# Hide/Show Files
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;
+
 # Run DropboxUploader if you have it installed
 alias dropbox="~/code/Dropbox-Uploader/dropbox_uploader.sh $1"
-
-# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
