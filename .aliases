@@ -6,8 +6,17 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# General
+alias d="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/projects"
+alias g="git"
+alias h="history"
+alias j="jobs"
+
 # programs
-alias st='open -a "Sublime Text"'
+alias subl='open -a "Sublime Text"'
 alias preview="open -a '$PREVIEW'"
 alias xcode="open -a '/Developer/Applications/Xcode.app'"
 alias filemerge="open -a '/Developer/Applications/Utilities/FileMerge.app'"
@@ -18,7 +27,7 @@ alias chrome="open -a google\ chrome"
 alias f='open -a Finder'
 alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app'"
 alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
-alias skecth='open -a "Sketch"'
+alias sketch='open -a "Sketch"'
 alias tweetbot='open -a "Tweetbot"'
 
 
@@ -43,7 +52,13 @@ alias please=sudo
 
 # handy things
 alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl.scpt"
+#alias spotify="osascript ~/code/SpotifyControl.scpt"
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 
 # Detect which `ls` flavor is in use
@@ -120,7 +135,6 @@ alias c="tr -d '\n' | pbcopy"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
-alias g="git"
 alias v="vim"
 
 # File size
