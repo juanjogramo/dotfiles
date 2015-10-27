@@ -33,8 +33,8 @@ alias tw='open -a tweetbot'
 #hardware -- https://github.com/herrbischoff/awesome-osx-command-line
 alias udid="system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iPhone/,/Serial/p'"
 alias ports="networksetup -listallhardwareports"
-alias battery="pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'"
-alias batteryT="pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f3 -d';'"
+alias battery="pmset -g batt | egrep '([0-9]+\%).*' -o --colour=auto | cut -f1 -d';'"
+alias batteryt="pmset -g batt | egrep '([0-9]+\%).*' -o --colour=auto | cut -f3 -d';'"
 alias screen="system_profiler SPDisplaysDataType | grep Resolution"
 alias cpu="sysctl -n machdep.cpu.brand_string"
 
