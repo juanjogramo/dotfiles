@@ -47,7 +47,7 @@ alias gh="open -a google\ chrome 'http://github.com/erikfloresq'"
 alias song="spotify info"
 alias mute="osascript -e 'set volume output muted true'"
 alias gpass="pwgen -Cs 20 1 | tr -d ' ' | tr -d '\n' | pbcopy"
-alias deviredData="rm -frd ~/Library/Developer/Xcode/DerivedData/*"
+alias deviredData="rm -frd ~/Library/Developer/Xcode/DerivedData/*; killall Xcode; open -a Xcode"
 
 #nginx
 alias nx="sudo nginx"
