@@ -1,4 +1,4 @@
-# Erik's dotfiles.
+# Juanjo's dotfiles.
 
 This repo contains my personal dotfiles and are heavily based on [addy](https://github.com/addyosmani/dotfiles/)
 
@@ -15,7 +15,7 @@ I do something nice with my `PATH` there:
 
 ```shell
 # PATH like a bawss
-      PATH=/opt/local/bin
+PATH=/opt/local/bin
 PATH=$PATH:/opt/local/sbin
 PATH=$PATH:/bin
 PATH=$PATH:~/.rvm/bin
@@ -64,9 +64,6 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
 
 
-
-
-
 ## overview of files
 
 ####  Automatic config
@@ -99,7 +96,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/erikfloresq/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/juanjogramo/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.

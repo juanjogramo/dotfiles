@@ -7,28 +7,23 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # General
-#alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
 
 # programs
-alias subl='open -a "Sublime Text"'
-alias atom="open -a atom"
 alias preview="open -a '$PREVIEW'"
 alias xcode="open -a '/Developer/Applications/Xcode.app'"
 alias filemerge="open -a '/Developer/Applications/Utilities/FileMerge.app'"
 alias safari="open -a safari"
 alias firefox="open -a firefox"
-#alias opera="open -a opera"
 alias chrome="open -a google\ chrome"
 alias f='open -a Finder'
-alias ph="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
 alias sk='open -a sketch'
-alias tw='open -a tweetbot'
+alias th='open -a things'
 
 #hardware -- https://github.com/herrbischoff/awesome-osx-command-line
 alias udid="system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iPhone/,/Serial/p'"
@@ -40,14 +35,15 @@ alias cpu="sysctl -n machdep.cpu.brand_string"
 
 
 # general shortcuts
-alias pro="cd ~/projects"
-alias ios="cd ~/projects/ios"
-alias gh="open -a google\ chrome 'http://github.com/erikfloresq'"
-#alias bl="open -a google\ chrome 'http://browserling.com'"
+alias pro="cd ~/Projects"
+alias ios="cd ~/Projects/iOS"
+alias be="cd ~/Projects/iOS/Belatrix"
+alias gh="open -a safari 'http://github.com/juanjogramo'"
 alias song="spotify info"
 alias mute="osascript -e 'set volume output muted true'"
 alias gpass="pwgen -Cs 20 1 | tr -d ' ' | tr -d '\n' | pbcopy"
 alias deviredData="rm -frd ~/Library/Developer/Xcode/DerivedData/*; killall Xcode; open -a Xcode"
+alias shut="sudo shutdown -h now"
 
 #nginx
 alias nx="sudo nginx"
