@@ -50,6 +50,7 @@ alias mute="osascript -e 'set volume output muted true'"
 alias gpass="pwgen -Cs 20 1 | tr -d ' ' | tr -d '\n' | pbcopy"
 alias deviredData="rm -frd ~/Library/Developer/Xcode/DerivedData/*; killall Xcode; open -a Xcode"
 alias shut="sudo shutdown -h now"
+alias fullsimulator="defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES"
 
 #nginx
 alias nx="sudo nginx"
