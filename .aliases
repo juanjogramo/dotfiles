@@ -1,6 +1,7 @@
 # FIS disable blue coat
 alias bluecoat="cd /Library/LaunchDaemons/ && sudo launchctl unload com.bluecoat.ua.plist"
 alias fis="cd ~/Projects/FIS/ios-loyalty"
+alias core="cd ~/Projects/FIS/ios-loyalty/Modules/RLACore/Example"
 alias archive="xcodebuild -workspace Retail\ Loyalty.xcworkspace -scheme Retail\ Loyalty -archivePath ~/Desktop/build/loyalty.xcarchive archive"
 alias makeIpa="xcodebuild -exportArchive -archivePath ~/Desktop/build/loyalty.xcarchive -exportOptionsPlist ~/Desktop/build/options.plist -exportPath ~/Desktop/build/"
 
